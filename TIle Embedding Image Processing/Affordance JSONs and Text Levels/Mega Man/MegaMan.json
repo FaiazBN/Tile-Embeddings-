@@ -1,0 +1,22 @@
+{
+	"tiles" : {
+        "@" : ["solid"],
+        "-" : ["passable"],
+        "#" : ["solid"],
+        "B" : ["solid", "breakable"],
+        "H" : ["solid", "hazard"],
+        "|" : ["passable", "climbable"],
+        "L" : ["passable", "collectable"],
+        "l" : ["passable", "collectable"],
+        "W" : ["passable", "collectable"],
+        "w" : ["passable", "collectable"],
+        "+" : ["passable", "collectable"],
+        "*" : ["passable", "collectable"],
+        "U" : ["passable", "collectable"],
+        "M" : ["solid", "moving"],
+        "P" : ["passable"],
+        "C" : ["solid", "hazard"],
+        "D" : ["solid", "portal", "passable"],
+        "t" : ["passable"]
+    }
+}

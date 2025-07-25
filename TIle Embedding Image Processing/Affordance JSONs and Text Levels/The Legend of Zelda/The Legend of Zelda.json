@@ -1,0 +1,15 @@
+{
+    "tiles" : {
+        "F" : ["solid"],
+        "B" : ["solid"],
+        "M" : ["solid", "hazard"],
+        "P" : ["solid"],
+        "O" : ["solid"],
+        "I" : ["solid"],
+        "D" : ["solid", "portal", "passable"],
+        "S" : ["passable", "climbable"],
+        "W" : ["solid"],
+        "-" : ["solid"],
+        "@" : ["passable"]
+    }
+}

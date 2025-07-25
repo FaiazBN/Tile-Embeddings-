@@ -1,0 +1,7 @@
+{
+    "tiles" : {
+        "B" : ["solid"],
+        "G" : ["solid"],
+        "." : ["passable"]
+    }
+}

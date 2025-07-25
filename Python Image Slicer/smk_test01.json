@@ -1,0 +1,12 @@
+{
+    "tiles" : {
+        "W" : ["solid"],
+        "S" : ["passable"],
+        "-" : ["solid"],
+        "Q" : ["passable", "collectable"],
+        "O" : ["passable", "hazard"],
+        "C" : ["passable", "collectable"],
+        "R" : ["passable"],
+        "<" : ["passable", "collectable"]
+    }
+}

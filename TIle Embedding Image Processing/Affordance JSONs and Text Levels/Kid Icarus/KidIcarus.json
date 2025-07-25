@@ -1,0 +1,10 @@
+{
+    "tiles" : {
+        "#" : ["solid"],
+        "-" : ["passable"],
+        "D" : ["solid","portal"],
+        "H" : ["solid","hazard"],
+        "M" : ["solid","passable","moving"],
+        "T" : ["solid","passable"]
+    }
+}
