@@ -44,11 +44,11 @@ for filename in os.listdir(vae_outputs_dir):
         with open(output_path, "wb") as f:
             pickle.dump(reconstructed_denorm, f)
 
-        # === Stats ===
-        print(f"✔ Original shape       : {original_data.shape}")
-        print(f"✔ Reconstructed shape  : {reconstructed.shape}")
-        print(f"✔ Max abs values shape : {max_abs_values.shape}")
-        print(f"✔ De-normalized shape  : {reconstructed_denorm.shape}")
+
+        print(f"Original shape       : {original_data.shape}")
+        print(f"Reconstructed shape  : {reconstructed.shape}")
+        print(f"Max abs values shape : {max_abs_values.shape}")
+        print(f"De-normalized shape  : {reconstructed_denorm.shape}")
         print(f"Saved to            : {output_path}")
         print(f"Value range after de-normalization: [{np.min(reconstructed_denorm):.4f}, {np.max(reconstructed_denorm):.4f}]")
 
