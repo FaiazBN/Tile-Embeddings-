@@ -12,18 +12,18 @@ os.makedirs(output_folder, exist_ok=True)
 # === Load PCA Model ===
 with open(pca_model_path, "rb") as f:
     pca = pickle.load(f)
-print("✅ PCA model loaded.")
+print("PCA model loaded.")
 
 # === Process Files ===
 for filename in os.listdir(input_folder):
     if filename.endswith(".pkl") and "_PCA_reduced_reconstructed_denormalized" in filename:
         file_path = os.path.join(input_folder, filename)
 
-        # Load the reduced data (n x 118)
+        # Load the reduced data
         with open(file_path, "rb") as f:
             reduced_data = pickle.load(f)
 
-        # Inverse transform to get original dimensions (n x 1024)
+        # Inverse transform
         restored_data = pca.inverse_transform(reduced_data)
 
         # Create output filename
