@@ -100,4 +100,4 @@ for game_name, (start_idx, end_idx) in game_index_map.items():
     leftover = game_data.shape[0] % 9
     print(f"{game_name}: {num_slices} slices saved, {leftover} leftover samples")
 
-print("\n✅ All slices saved successfully!")
+print("\nAll slices saved successfully!")
