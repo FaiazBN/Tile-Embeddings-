@@ -40,8 +40,5 @@ for filename in os.listdir(data_dir):
         global_max = np.max(normalized_data)
         print(f"\nValue range after normalization: [{global_min:.4f}, {global_max:.4f}]")
 
-        # Warn if out of expected range
-        if global_min < -1 or global_max > 1:
-            print("⚠️ WARNING: Values are outside [-1, 1]. Check normalization logic.")
 
 print(f"\nNormalization complete. Files saved in: {output_dir}")
